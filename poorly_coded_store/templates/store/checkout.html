@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amadon checkout </title>
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}" />
+  </head>
+  <body>
+    <div class="container text-left mt-5">
+        <div class="row mt-5">
+            <h1 class="mb-5">Thank you for your business!</h1>
+            <div>
+                <p>We charged your credit card for {{total_order_price}}$</p>
+                <p>You have ordered {{orders_count}} items so far and spent {{total_sum}}$ with Amadon.com!</p>
+            </div>
+            <a href="/"> Go Back</a>
+
+        </div>
+
+    </div>   
+    <script src="{% static 'bootstrap.bundle.min.js' %}"></script>
+ </body>
+</html
